@@ -1,4 +1,4 @@
-// Danh sách sản phẩm demo tương tự file tham khảo
+
 const products = [
   {
     id: 1,
