@@ -1,0 +1,214 @@
+@charset "UTF-8";
+body {
+  background: #f8f9fa;
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  background: #343a40;
+  color: #fff;
+}
+
+.jumbotron {
+  background: url("images/breadcrumb-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#product-list .card {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+#product-list .card .card-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #dc3545;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+#product-list .card .card-img-top {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#product-list .card .btn-add-cart {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+#product-list .card .btn-add-cart:hover {
+  background: #0062cc;
+}
+
+footer {
+  background: #343a40;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+  }
+  #product-list .card {
+    margin-bottom: 20px;
+  }
+}
+section.container.a {
+  background-image: url("images/product-1.jpg");
+  background-size: cover; /* Hình nền phủ kín toàn bộ */
+  background-position: center; /* Căn giữa hình nền */
+  background-repeat: no-repeat; /* Không lặp lại hình */
+}
+
+.banner {
+    padding-top: 50px; /* Có thể điều chỉnh nếu muốn khoảng cách từ trên xuống */
+    padding-bottom: 50px; /* Có thể điều chỉnh nếu muốn khoảng cách từ dưới lên */
+}
+
+.banner__item {
+    height: 380px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Giảm margin-bottom một chút so với 30px nếu cần */
+    /* Hoặc bạn có thể bỏ margin-bottom ở đây và áp dụng cho các hàng (rows) nếu cần */
+}
+
+/* Các thuộc tính khác giữ nguyên như bạn đã có */
+.banner__item.banner__item--middle {
+    height: 380px;
+}
+
+.banner__item.banner__item--last {
+    height: 380px;
+    left: 50px;
+}
+
+.banner__item__pic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner__item__pic img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.banner__item__text {
+    position: absolute;
+    left: 40px; /* Điều chỉnh vị trí ngang của text nếu cần */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+.banner__item__text1 {
+    position: absolute;
+    left: -300px; /* Điều chỉnh vị trí ngang của text nếu cần */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+.banner__item__text2 {
+    position: absolute;
+    left: -150px; /* Điều chỉnh vị trí ngang của text nếu cần */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+.banner__item__text3 {
+    position: absolute;
+    left: 40px; /* Điều chỉnh vị trí ngang của text nếu cần */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+
+.banner__item__text h2 {
+    font-size: 36px; /* Có thể giảm kích thước font nếu thấy quá lớn */
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.banner__item__text a {
+    font-size: 13px; /* Có thể giảm kích thước font nếu thấy quá lớn */
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+.banner__item__text1 a {
+    font-size: 13px; /* Có thể giảm kích thước font nếu thấy quá lớn */
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+.banner__item__text2 a {
+    font-size: 13px; /* Có thể giảm kích thước font nếu thấy quá lớn */
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+.banner__item__text3 a {
+    font-size: 13px; /* Có thể giảm kích thước font nếu thấy quá lớn */
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+
+.banner__item__text a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    content: "";
+}
+
+/* Điều chỉnh vị trí của các cột để giảm khoảng cách ngang giữa các hình ảnh */
+@media (min-width: 992px) {
+    .row {
+        /* Áp dụng negative margin để bù đắp cho padding mặc định của cột */
+        margin-left: -7.5px; /* Giá trị này có thể thay đổi tùy thuộc vào gutter của Bootstrap bạn đang dùng */
+        margin-right: -7.5px;
+    }
+
+    .col-lg-7, .col-lg-5, .offset-lg-4 {
+        /* Áp dụng padding để tạo lại khoảng cách giữa các cột */
+        padding-left: 7.5px; /* Giá trị này có thể thay đổi tùy thuộc vào gutter của Bootstrap bạn đang dùng */
+        padding-right: 7.5px;
+    }
+
+    .col-lg-7.offset-lg-4 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        margin-left: 33.333333%; /* Vẫn giữ offset để hình ảnh đầu tiên nằm bên phải */
+    }
+
+    .col-lg-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}

@@ -1,0 +1,161 @@
+// style_new.scss - Sử dụng biến, nesting, và cú pháp SCSS
+$main-bg: #f8f9fa;
+$header-bg: #343a40;
+$primary: #007bff;
+$danger: #dc3545;
+$white: #fff;
+
+body {
+  background: $main-bg;
+}
+header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  background: $header-bg;
+  color: $white;
+}
+.jumbotron {
+  background: url('images/product-1.jpg') center/cover no-repeat;
+  color: $white;
+  margin-bottom: 0;
+}
+#product-list {
+  .card {
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+    .card-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: $danger;
+      color: $white;
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .btn-add-cart {
+      background: $primary;
+      color: $white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      margin-top: 10px;
+      &:hover {
+        background: darken($primary, 10%);
+      }
+    }
+  }
+}
+footer {
+  background: $header-bg;
+  color: $white;
+}
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+  }
+  #product-list .card {
+    margin-bottom: 20px;
+  }
+}
+section.container.a{
+  background-image: url('images/product-1.jpg');
+  background-size: cover; /* Hình nền phủ kín toàn bộ */
+  background-position: center; /* Căn giữa hình nền */
+  background-repeat: no-repeat; /* Không lặp lại hình */
+}
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner__item {
+    height: 380px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner__item.banner__item--middle {
+    height: 380px;
+}
+
+.banner__item.banner__item--last {
+    height: 380px;
+}
+
+.banner__item__pic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner__item__pic img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+}
+
+.banner__item__text {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+
+.banner__item__text h2 {
+    font-size: 40px;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.banner__item__text a {
+    font-size: 14px;
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+
+.banner__item__text a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    content: "";
+}
+
+/* Adjustments for layout based on the image */
+/* The first banner item (Clothing Collections 2030) is larger and offset */
+.col-lg-7.offset-lg-4 .banner__item {
+    margin-left: auto; /* Pushes the item to the right */
+    margin-right: 0;
+}
+
+/* The second banner item (Accessories) is on the left in the row below the first */
+/* The third banner item (Shoes Spring 2030) is on the right in the row below the first */
+/* Assuming a two-column layout for the bottom two items */
+@media (min-width: 992px) {
+    .col-lg-7.offset-lg-4 {
+        flex: 0 0 58.333333%; /* Corresponding to col-lg-7 */
+        max-width: 58.333333%;
+        margin-left: 33.333333%; /* Corresponding to offset-lg-4 */
+    }
+
+    .col-lg-5 {
+        flex: 0 0 41.666667%; /* Corresponding to col-lg-5 */
+        max-width: 41.666667%;
+    }
+}

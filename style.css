@@ -1,0 +1,47 @@
+/* style.css - CSS cơ bản cho trang chủ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+header, footer {
+  background: #343a40;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+}
+section {
+  padding: 24px;
+}
+.product-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+}
+.product-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.product-item button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-item button:hover {
+  background: #0056b3;
+}
