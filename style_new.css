@@ -52,6 +52,24 @@ footer {
   color: #fff;
 }
 
+footer .footer-social {
+  margin-top: 10px;
+}
+footer .footer-social a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 1.3em;
+  transition: color 0.2s;
+}
+footer .footer-social a:hover {
+  color: #007bff;
+}
+footer .footer-info {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #ccc;
+}
+
 @media (max-width: 768px) {
   .jumbotron {
     padding: 2rem 1rem;
@@ -211,4 +229,11 @@ section.container.a {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
+}
+
+@media (max-width: 600px) {
+  header .container, footer .container {
+    flex-direction: column !important;
+    text-align: center;
+  }
 }

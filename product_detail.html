@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop GLOBEE - Giỏ hàng</title>
+  <title>Chi tiết sản phẩm</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style_new.css">
-
 </head>
 <body>
   <header class="bg-dark text-white py-2">
@@ -24,29 +23,20 @@
     </div>
   </header>
   <section class="container py-5">
-    <h2 class="mb-4 text-center">Giỏ hàng của bạn</h2>
-    <div id="cart-list"></div>
-    <div id="cart-total"></div>
+    <div id="product-detail"></div>
   </section>
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <div class="container">
-      <div class="footer-social mb-2">
-        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" title="YouTube"><i class="fa fa-youtube"></i></a>
-      </div>
-      
-      <p class="mb-0">&copy; 2025 Shop GLOBEE. All rights reserved.</p>
+      <p class="mb-0">&copy; 2025 Shop GLOBEE rights reserved.</p>
     </div>
   </footer>
   <!-- Script -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Sử dụng main_api.js để lấy dữ liệu từ API -->
-  <script src="main_api.js"></script>
+  <!-- Sử dụng product_detail_api.js để lấy chi tiết sản phẩm từ API -->
+  <script src="product_detail_api.js"></script>
+  <script src="main.js"></script>
   <script src="api_config.js" type="module"></script>
-  <script src="cart_api.js" type="module"></script>
-  <script src="shopping_cart_api.js" type="module"></script>
+ 
 </body>
 </html>
